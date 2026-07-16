@@ -1,0 +1,6 @@
+{
+  "name": "Vibrant Developer Portfolio",
+  "description": "A highly colorful Neo-Brutalist portfolio showcase for a full-stack and back-end developer, featuring filterable projects, interactive server terminal simulators, and resume downloads.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
