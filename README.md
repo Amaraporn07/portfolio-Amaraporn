@@ -1,20 +1,45 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Amaraporn's Developer Portfolio 🚀
 
-# Run and deploy your AI Studio app
+Welcome to my personal portfolio repository! This project is a modern, responsive web application built to showcase my skills, projects, and academic background.
 
-This contains everything you need to run your app locally.
+## 🛠 Technologies Used
+- **React 18** (with Hooks)
+- **TypeScript** for type safety
+- **Vite** for lightning-fast build and development
+- **Framer Motion** for smooth animations
+- **Lucide React** for beautiful icons
 
-View your app in AI Studio: https://ai.studio/apps/e7cb2076-000c-47c1-b95c-0b9bc5efa393
+## 💻 How to Run Locally (วิธีติดตั้งและเปิดใช้งาน)
 
-## Run Locally
+To get a local copy up and running, follow these simple steps:
 
-**Prerequisites:**  Node.js
+### Prerequisites (สิ่งที่ต้องมี)
+Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
 
+### Installation (ขั้นตอนการติดตั้ง)
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+1. **Clone the repository** (โคลนโปรเจค)
+   ```bash
+   git clone https://github.com/Amaraporn07/portfolio-Amaraporn.git
+   cd portfolio-Amaraporn
+   ```
+
+2. **Install dependencies** (ติดตั้งไลบรารีที่จำเป็น)
+   ```bash
+   npm install
+   ```
+
+3. **Environment Setup** (ตั้งค่า Environment)
+   สร้างไฟล์ `.env.local` หรือก็อปปี้จากไฟล์ตัวอย่าง:
+   ```bash
+   cp .env.example .env.local
+   ```
+   *หมายเหตุ: เข้าไปที่ไฟล์ `.env.local` และใส่ค่า `GEMINI_API_KEY` ของคุณ*
+
+4. **Start the development server** (เปิดรันเซิร์ฟเวอร์)
+   ```bash
+   npm run dev
+   ```
+
+5. **Open in Browser** (เปิดดูในเบราว์เซอร์)
+   เปิดเว็บเบราว์เซอร์ของคุณและเข้าไปที่ `http://localhost:5173/` (หรือตาม URL ที่แสดงใน Terminal)
