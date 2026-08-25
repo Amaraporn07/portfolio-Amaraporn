@@ -3,9 +3,9 @@ import { Project, Skill, Experience, Certificate } from './types';
 export const PROJECTS_DATA: Project[] = [
   {
     id: 'dsa-service-welfare',
-    title: 'DSA Service And Welfare (ระบบการจัดการงานบริการ และสวัสดิการ)',
-    description: 'ระบบแอปพลิเคชันสำหรับการจัดการงานบริการและสวัสดิการ เพื่ออำนวยความสะดวกในการเข้าถึงข้อมูล',
-    longDescription: 'ระบบแอปพลิเคชันสำหรับการจัดการงานบริการและสวัสดิการต่างๆ (DSA Service And Welfare) พร้อมระบบล็อกอินและการจัดการข้อมูลที่มีประสิทธิภาพ',
+    title: 'DSA Service And Welfare (ระบบจัดการงานบริการและสวัสดิการ)',
+    description: 'Web Application ระบบองค์กรที่พัฒนาขึ้นเพื่อให้ กองกิจการนิสิต มหาวิทยาลัยพะเยา ใช้งานจริง',
+    longDescription: 'โปรเจคซอฟต์แวร์ระดับองค์กร (Production-level) ที่ออกแบบและพัฒนาเพื่อใช้งานจริงใน "กองกิจการนิสิต มหาวิทยาลัยพะเยา" (Division of Student Affairs) ช่วยยกระดับการจัดการงานบริการและสวัสดิการให้เป็นระบบดิจิทัล รองรับการใช้งานของบุคลากรและนิสิตด้วยสถาปัตยกรรมที่ทันสมัย ปลอดภัย และผ่านกระบวนการทดสอบคุณภาพโค้ดมาตรฐานสากล',
     category: 'fullstack',
     tags: ['React 19', 'TypeScript', 'Node.js', 'Hono', 'MySQL', 'Docker', 'AWS'],
     color: 'purple',
@@ -17,10 +17,10 @@ export const PROJECTS_DATA: Project[] = [
     demoUrl: 'https://dsaservicewelfare.duckdns.org/login',
     status: 'completed',
     features: [
-      'ระบบจัดการงานบริการ และระบบจัดการสวัสดิการ',
-      'ระบบล็อกอินผ่าน UP Account (Microsoft Entra ID) พร้อม JWT',
-      'ทดสอบ API ด้วย Postman และ Automation Test ด้วย Robot Framework + Selenium',
-      'ตรวจสอบคุณภาพโค้ดด้วย SonarCloud'
+      'พัฒนาระบบเพื่อให้บริการจริง (Production) สำหรับกองกิจการนิสิต มหาวิทยาลัยพะเยา',
+      'ระบบยืนยันตัวตนระดับองค์กร (SSO) ผ่าน UP Account (Microsoft Entra ID) ด้วย JWT',
+      'วางระบบทดสอบอย่างครอบคลุม: API Testing (Postman) และ E2E Automation Test (Robot Framework + Selenium)',
+      'ควบคุมมาตรฐานและสแกนคุณภาพโค้ดด้วย SonarCloud เพื่อความเสถียรสูงสุดของระบบ'
     ],
     architecture: [
       'Frontend: React 19, TypeScript, Vite, Tailwind CSS',
