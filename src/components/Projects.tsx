@@ -73,7 +73,7 @@ export default function Projects() {
                 <motion.div key={project.id} layout
                   initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, scale: 0.96 }} transition={{ duration: 0.35, delay: idx * 0.05 }}
-                  className="card" style={{ display: 'flex', flexDirection: 'column' }}
+                  className="card" style={{ display: 'flex', flexDirection: 'column', overflow: 'hidden' }}
                   id={`project-card-${project.id}`}
                 >
                   {/* Top accent bar */}
