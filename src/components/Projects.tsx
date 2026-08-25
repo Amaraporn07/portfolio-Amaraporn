@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { PROJECTS_DATA } from '../data';
 import { Github, ExternalLink, ChevronDown, ChevronUp, Code2, CheckCircle, Layers, Folder } from 'lucide-react';

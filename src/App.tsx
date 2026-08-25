@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import Header from './components/Header';
 import Hero from './components/Hero';
@@ -9,7 +9,6 @@ import Transcript from './components/Transcript';
 import Certificates from './components/Certificates';
 import { ArrowUp, Heart } from 'lucide-react';
 
-// @ts-ignore
 import avatarImg from './assets/images/avatar.jpg';
 
 export default function App() {

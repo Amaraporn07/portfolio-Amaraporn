@@ -2,27 +2,23 @@ import { Project, Skill, Experience, Certificate } from './types';
 
 export const PROJECTS_DATA: Project[] = [
   {
-    id: 'student-portal',
-    title: 'Student Portal System',
-    description: 'Online student portal for university, supporting course registration, grade checking, and student activities',
-    longDescription: 'Developed a comprehensive web application for managing student data, including course registration, schedule, grades, notification system, and real-time student activities.',
+    id: 'dsa-service-welfare',
+    title: 'DSA Service And Welfare (ระบบการจัดการงานบริการ และสวัสดิการ)',
+    description: 'ระบบแอปพลิเคชันสำหรับการจัดการงานบริการและสวัสดิการ เพื่ออำนวยความสะดวกในการเข้าถึงข้อมูล',
+    longDescription: 'ระบบแอปพลิเคชันสำหรับการจัดการงานบริการและสวัสดิการต่างๆ (DSA Service And Welfare) พร้อมระบบล็อกอินและการจัดการข้อมูลที่มีประสิทธิภาพ',
     category: 'fullstack',
-    tags: ['React', 'Node.js', 'MySQL', 'Express', 'JWT', 'Tailwind'],
+    tags: ['Web Application', 'Service Management', 'Welfare System'],
     color: 'purple',
-    githubUrl: 'https://github.com/developer/student-portal',
-    demoUrl: 'https://student-portal-demo.vercel.app',
+    githubUrl: '',
+    demoUrl: 'https://dsaservicewelfare.duckdns.org/login',
     status: 'completed',
     features: [
-      'Course registration with prerequisite checking',
-      'Dashboard displaying grades and real-time GPA Calculator',
-      'Notification system for activities, exams, and deadlines',
-      'Role-based Access Control (Admin, Teacher, Student)'
+      'ระบบจัดการงานบริการ',
+      'ระบบการจัดการสวัสดิการ',
+      'ระบบล็อกอินและจัดการสิทธิ์ผู้ใช้งาน'
     ],
     architecture: [
-      'Frontend: React 18 + Vite, Tailwind CSS, Recharts',
-      'Backend: Node.js, Express.js (REST API with JWT Authentication)',
-      'Database: MySQL with Sequelize ORM',
-      'Deployment: Vercel (Frontend) + Railway (Backend)'
+      'Web Application System'
     ]
   },
   {

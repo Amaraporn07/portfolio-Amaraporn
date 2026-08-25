@@ -1,0 +1,28 @@
+services:
+  # Production: build the app and serve the static files with Nginx
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+
+  # Development: hot-reload via Vite dev server
+  # Run with: docker compose --profile dev up dev
+  dev:
+    image: node:20-alpine
+    working_dir: /app
+    command: sh -c "npm ci && npm run dev"
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
+      - node_modules:/app/node_modules
+    environment:
+      - DISABLE_HMR=false
+    profiles:
+      - dev
+
+volumes:
+  node_modules:

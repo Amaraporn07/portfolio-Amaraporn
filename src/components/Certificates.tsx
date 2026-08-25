@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import { useState, ReactNode } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { CERTIFICATES_DATA } from '../data';
 import { Award, Code2, Database, Layers, GitBranch, Palette, ExternalLink, Trophy, Star } from 'lucide-react';
 
-const ICONS: Record<string, React.ReactNode> = {
+const ICONS: Record<string, ReactNode> = {
   Award: <Award size={22} />, Code2: <Code2 size={22} />, Database: <Database size={22} />,
   Layers: <Layers size={22} />, GitBranch: <GitBranch size={22} />, Palette: <Palette size={22} />,
 };

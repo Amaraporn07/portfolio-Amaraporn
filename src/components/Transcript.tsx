@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { FileText, X, Maximize2 } from 'lucide-react';
 import transcriptImg from '../assets/images/transcript.png';
@@ -7,7 +7,7 @@ export default function Transcript() {
   const [isOpen, setIsOpen] = useState(false);
 
   // Prevent scrolling when modal is open
-  React.useEffect(() => {
+  useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = 'hidden';
     } else {

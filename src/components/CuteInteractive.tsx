@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Terminal, Heart, Sparkles, Cpu, RefreshCw, Zap, Bug, Send } from 'lucide-react';
 

@@ -42,4 +42,4 @@ Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
    ```
 
 5. **Open in Browser** (เปิดดูในเบราว์เซอร์)
-   เปิดเว็บเบราว์เซอร์ของคุณและเข้าไปที่ `http://localhost:5173/` (หรือตาม URL ที่แสดงใน Terminal)
+   เปิดเว็บเบราว์เซอร์ของคุณและเข้าไปที่ `http://localhost:3000/` (หรือตาม URL ที่แสดงใน Terminal)

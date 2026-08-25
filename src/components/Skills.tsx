@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import { useState, ReactNode } from 'react';
 import { motion } from 'motion/react';
 import { SKILLS_DATA } from '../data';
 import { Zap, Server, Database, GitBranch, Palette, Code2, Layers, FileCode } from 'lucide-react';
 
-const ICONS: Record<string, React.ReactNode> = {
+const ICONS: Record<string, ReactNode> = {
   Code2: <Code2 size={20} />, Zap: <Zap size={20} />, Layers: <Layers size={20} />,
   Server: <Server size={20} />, Database: <Database size={20} />, FileCode: <FileCode size={20} />,
   GitBranch: <GitBranch size={20} />, Palette: <Palette size={20} />,
