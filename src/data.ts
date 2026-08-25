@@ -195,16 +195,15 @@ export const SKILLS_DATA: Skill[] = [
 
 export const EXPERIENCES_DATA: Experience[] = [
   {
-    role: 'Full-Stack Developer (System Re-Architecture & Optimization)',
-    company: 'Sports Facility Usage Tracking & Analytics System — Phase 2',
-    period: 'Year 2, Semester 2',
+    role: 'Software Engineering Student',
+    company: 'University of Phayao',
+    period: '2024 - Present',
     description: [
-      'Executed a complete system re-architecture to resolve performance bottlenecks and high operational costs',
-      'Transitioned Tech Stack to Node.js (Hono) and TypeScript for better type safety and high-performance execution',
-      'Migrated high-volume workloads from Cloudflare D1 to a self-managed MySQL environment for cost optimization',
-      'Implemented Docker containerization and deployed the application on AWS for a scalable production environment'
+      'Pursuing a Bachelor of Engineering in Software Engineering',
+      'Passionate about building high-performance web applications and optimizing infrastructure',
+      'Consistently striving for academic excellence with a GPA of 3.28'
     ],
-    color: 'blue'
+    color: 'purple'
   },
   {
     role: 'Full-Stack Developer (Initial Development)',
@@ -218,15 +217,16 @@ export const EXPERIENCES_DATA: Experience[] = [
     color: 'teal'
   },
   {
-    role: 'Software Engineering Student',
-    company: 'University of Phayao',
-    period: '2024 - Present',
+    role: 'Full-Stack Developer (System Re-Architecture & Optimization)',
+    company: 'Sports Facility Usage Tracking & Analytics System — Phase 2',
+    period: 'Year 2, Semester 2',
     description: [
-      'Pursuing a Bachelor of Engineering in Software Engineering',
-      'Passionate about building high-performance web applications and optimizing infrastructure',
-      'Consistently striving for academic excellence with a GPA of 3.28'
+      'Executed a complete system re-architecture to resolve performance bottlenecks and high operational costs',
+      'Transitioned Tech Stack to Node.js (Hono) and TypeScript for better type safety and high-performance execution',
+      'Migrated high-volume workloads from Cloudflare D1 to a self-managed MySQL environment for cost optimization',
+      'Implemented Docker containerization and deployed the application on AWS for a scalable production environment'
     ],
-    color: 'purple'
+    color: 'blue'
   }
 ];
 
