@@ -7,7 +7,7 @@ export const PROJECTS_DATA: Project[] = [
     description: 'ระบบแอปพลิเคชันสำหรับการจัดการงานบริการและสวัสดิการ เพื่ออำนวยความสะดวกในการเข้าถึงข้อมูล',
     longDescription: 'ระบบแอปพลิเคชันสำหรับการจัดการงานบริการและสวัสดิการต่างๆ (DSA Service And Welfare) พร้อมระบบล็อกอินและการจัดการข้อมูลที่มีประสิทธิภาพ',
     category: 'fullstack',
-    tags: ['Web Application', 'Service Management', 'Welfare System'],
+    tags: ['React 19', 'TypeScript', 'Node.js', 'Hono', 'MySQL', 'Docker', 'AWS'],
     color: 'purple',
     githubUrl: '',
     repositories: [
@@ -17,12 +17,15 @@ export const PROJECTS_DATA: Project[] = [
     demoUrl: 'https://dsaservicewelfare.duckdns.org/login',
     status: 'completed',
     features: [
-      'ระบบจัดการงานบริการ',
-      'ระบบการจัดการสวัสดิการ',
-      'ระบบล็อกอินและจัดการสิทธิ์ผู้ใช้งาน'
+      'ระบบจัดการงานบริการ และระบบจัดการสวัสดิการ',
+      'ระบบล็อกอินผ่าน UP Account (Microsoft Entra ID) พร้อม JWT',
+      'ทดสอบ API ด้วย Postman และ Automation Test ด้วย Robot Framework + Selenium',
+      'ตรวจสอบคุณภาพโค้ดด้วย SonarCloud'
     ],
     architecture: [
-      'Web Application System'
+      'Frontend: React 19, TypeScript, Vite, Tailwind CSS',
+      'Backend: Node.js, Hono, MySQL',
+      'Deployment: Docker บน AWS (Amazon Web Services)'
     ]
   },
   {
