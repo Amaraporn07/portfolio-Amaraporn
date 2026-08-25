@@ -13,6 +13,7 @@ export interface Project {
   features?: string[];
   architecture?: string[];
   status?: 'completed' | 'in-progress' | 'planning';
+  featured?: boolean;
 }
 
 export interface Skill {

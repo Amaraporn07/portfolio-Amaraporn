@@ -16,6 +16,7 @@ export const PROJECTS_DATA: Project[] = [
     ],
     demoUrl: 'https://dsaservicewelfare.duckdns.org/login',
     status: 'completed',
+    featured: true,
     features: [
       'พัฒนาระบบเพื่อให้บริการจริง (Production) สำหรับกองกิจการนิสิต มหาวิทยาลัยพะเยา',
       'ระบบยืนยันตัวตนระดับองค์กร (SSO) ผ่าน UP Account (Microsoft Entra ID) ด้วย JWT',
