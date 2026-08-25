@@ -195,37 +195,38 @@ export const SKILLS_DATA: Skill[] = [
 
 export const EXPERIENCES_DATA: Experience[] = [
   {
-    role: '3rd Year Student / University of Phayao (Currently studying)',
-    company: 'Software Engineering — University of Phayao',
-    period: '2023 - Present',
+    role: 'Full-Stack Developer (System Re-Architecture & Optimization)',
+    company: 'Sports Facility Usage Tracking & Analytics System — Phase 2',
+    period: 'Year 2, Semester 2',
     description: [
-      'Core subjects: Database Management, Web Development, Data Structures & Algorithms, Software Engineering, and Computer Networks',
-      'Cumulative GPA: 3.28, consistently striving for academic excellence',
-      'Participated in student activities and professional skill development programs in the Faculty of Science'
-    ],
-    color: 'purple'
-  },
-  {
-    role: 'Web Developer in Project-Based Learning',
-    company: 'Database Management System Project — UP',
-    period: '2024 (1 Semester)',
-    description: [
-      'Developed a full-stack digital library system in a team of 3',
-      'Designed ER Diagram and wrote Stored Procedures for automated book borrowing and returning',
-      'Achieved an A grade in the course and was selected to present the project to junior students'
+      'Executed a complete system re-architecture to resolve performance bottlenecks and high operational costs',
+      'Transitioned Tech Stack to Node.js (Hono) and TypeScript for better type safety and high-performance execution',
+      'Migrated high-volume workloads from Cloudflare D1 to a self-managed MySQL environment for cost optimization',
+      'Implemented Docker containerization and deployed the application on AWS for a scalable production environment'
     ],
     color: 'blue'
   },
   {
-    role: 'Freelance Web Developer',
-    company: 'Freelance — Web Design and Development',
-    period: '2024 - Present',
+    role: 'Full-Stack Developer (Initial Development)',
+    company: 'Sports Facility Usage Tracking & Analytics System — Phase 1',
+    period: 'Year 2, Semester 1',
     description: [
-      'Designed and developed small business websites and Landing Pages for local clients',
-      'Used WordPress, React, and Plain HTML/CSS according to client requirements',
-      'Practiced client communication, requirement gathering, and on-time project delivery'
+      'Developed a Minimum Viable Product (MVP) to collect and analyze sports facility usage data',
+      'Utilized Python (Django), Tailwind CSS, and Cloudflare D1 for the initial tech stack',
+      'Successfully implemented a functional prototype for data tracking and statistical reporting'
     ],
     color: 'teal'
+  },
+  {
+    role: 'Software Engineering Student',
+    company: 'University of Phayao',
+    period: '2024 - Present',
+    description: [
+      'Pursuing a Bachelor of Engineering in Software Engineering',
+      'Passionate about building high-performance web applications and optimizing infrastructure',
+      'Consistently striving for academic excellence with a GPA of 3.28'
+    ],
+    color: 'purple'
   }
 ];
 
