@@ -230,7 +230,19 @@ export const EXPERIENCES_DATA: Experience[] = [
   }
 ];
 
+import certAiGame from './assets/images/cert_AMARAPORN_ONKHOKSUNG.png';
+
 export const CERTIFICATES_DATA: Certificate[] = [
+  {
+    id: 'cert-ai-game',
+    title: 'พื้นฐานการสร้างเกมด้วย AI ฉบับเข้าใจง่าย',
+    issuer: 'FutureSkill | depa',
+    date: 'July 2026',
+    description: 'Basic AI Game Creation. Studied how to use AI tools for game development. Certified by Digital Skill Roadmap (depa).',
+    color: 'purple',
+    icon: 'Code2',
+    credentialUrl: certAiGame
+  },
   {
     id: 'cert-html-css',
     title: 'Responsive Web Design Certification',

@@ -111,6 +111,11 @@ export default function Certificates() {
                       }}>
                         {cert.description}
                       </p>
+                      {cert.credentialUrl && /\.(png|jpe?g|svg|webp)/i.test(cert.credentialUrl) && (
+                        <div style={{ marginTop: '10px', borderRadius: '8px', overflow: 'hidden', border: '1.5px solid var(--border-soft)' }}>
+                          <img src={cert.credentialUrl} alt={cert.title} style={{ width: '100%', display: 'block' }} />
+                        </div>
+                      )}
                     </motion.div>
                   )}
                 </AnimatePresence>
