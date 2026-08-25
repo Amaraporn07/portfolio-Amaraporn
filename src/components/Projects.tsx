@@ -73,11 +73,28 @@ export default function Projects() {
                 <motion.div key={project.id} layout
                   initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, scale: 0.96 }} transition={{ duration: 0.35, delay: idx * 0.05 }}
-                  className="card" style={{ display: 'flex', flexDirection: 'column', overflow: 'hidden', position: 'relative' }}
+                  className="card" style={{ display: 'flex', flexDirection: 'column', position: 'relative' }}
                   id={`project-card-${project.id}`}
                 >
+                  {project.featured && (
+                    <motion.div
+                      initial={{ scale: 0, rotate: -30 }} animate={{ scale: 1, rotate: -10 }} transition={{ type: 'spring', delay: 0.2 }}
+                      style={{
+                        position: 'absolute', top: '-14px', left: '-14px',
+                        background: 'var(--yellow)', color: 'var(--black)',
+                        border: '2.5px solid var(--black)', borderRadius: '12px',
+                        padding: '6px',
+                        display: 'flex', alignItems: 'center', justifyContent: 'center',
+                        zIndex: 10,
+                        boxShadow: '3px 3px 0px 0px var(--black)'
+                      }}
+                    >
+                      <Star size={18} fill="var(--black)" strokeWidth={1.5} />
+                    </motion.div>
+                  )}
+                  
                   {/* Top accent bar */}
-                  <div style={{ height: '4px', background: c.text, borderRadius: 'var(--r-lg) var(--r-lg) 0 0' }} />
+                  <div style={{ height: '4px', background: c.text, borderRadius: 'calc(var(--r-lg) - 2px) calc(var(--r-lg) - 2px) 0 0' }} />
 
                   <div style={{ padding: '1.4rem', flex: 1, display: 'flex', flexDirection: 'column', gap: '0.85rem' }}>
                     {/* Category + Status */}
@@ -90,11 +107,6 @@ export default function Projects() {
                         }}>
                           {project.category.toUpperCase()}
                         </span>
-                        {project.featured && (
-                          <motion.div initial={{ scale: 0, rotate: -30 }} animate={{ scale: 1, rotate: 0 }} transition={{ type: 'spring', delay: 0.2 }}>
-                            <Star size={16} fill="var(--yellow)" color="var(--yellow)" strokeWidth={1} style={{ dropShadow: '0 2px 4px rgba(0,0,0,0.1)' }} />
-                          </motion.div>
-                        )}
                       </div>
                       {project.status === 'completed' && (
                         <span style={{ display: 'flex', alignItems: 'center', gap: '4px', fontSize: '0.72rem', color: 'var(--green)', fontWeight: 600 }}>
