@@ -92,156 +92,156 @@ export default function Projects() {
                       <Star size={18} fill="var(--black)" strokeWidth={1.5} />
                     </motion.div>
                   )}
-                  
-                  {/* Top accent bar */}
-                  <div style={{ height: '4px', background: c.text, borderRadius: 'calc(var(--r-lg) - 2px) calc(var(--r-lg) - 2px) 0 0' }} />
+                                   <div style={{ flex: 1, display: 'flex', flexDirection: 'column', overflow: 'hidden', borderRadius: 'calc(var(--r-lg) - 2px)' }}>
+                    {/* Top accent bar */}
+                    <div style={{ height: '4px', background: c.text }} />
 
-                  <div style={{ padding: '1.4rem', flex: 1, display: 'flex', flexDirection: 'column', gap: '0.85rem' }}>
-                    {/* Category + Status */}
-                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-                      <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                        <span style={{
-                          padding: '3px 11px', borderRadius: 'var(--r-full)',
-                          fontSize: '0.7rem', fontWeight: 700, fontFamily: 'var(--font-mono)',
-                          background: c.light, border: `1.5px solid ${c.mid}`, color: c.text,
-                        }}>
-                          {project.category.toUpperCase()}
-                        </span>
+                    <div style={{ padding: '1.4rem', flex: 1, display: 'flex', flexDirection: 'column', gap: '0.85rem' }}>
+                      {/* Category + Status */}
+                      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                          <span style={{
+                            padding: '3px 11px', borderRadius: 'var(--r-full)',
+                            fontSize: '0.7rem', fontWeight: 700, fontFamily: 'var(--font-mono)',
+                            background: c.light, border: `1.5px solid ${c.mid}`, color: c.text,
+                          }}>
+                            {project.category.toUpperCase()}
+                          </span>
+                        </div>
+                        {project.status === 'completed' && (
+                          <span style={{ display: 'flex', alignItems: 'center', gap: '4px', fontSize: '0.72rem', color: 'var(--green)', fontWeight: 600 }}>
+                            <CheckCircle size={12} /> Completed
+                          </span>
+                        )}
                       </div>
-                      {project.status === 'completed' && (
-                        <span style={{ display: 'flex', alignItems: 'center', gap: '4px', fontSize: '0.72rem', color: 'var(--green)', fontWeight: 600 }}>
-                          <CheckCircle size={12} /> Completed
-                        </span>
-                      )}
-                    </div>
 
-                    {/* Title */}
-                    <h3 style={{ fontFamily: 'var(--font-head)', fontWeight: 700, fontSize: '1.15rem', color: 'var(--text-primary)', margin: 0, lineHeight: 1.3 }}>
-                      {project.title}
-                    </h3>
+                      {/* Title */}
+                      <h3 style={{ fontFamily: 'var(--font-head)', fontWeight: 700, fontSize: '1.15rem', color: 'var(--text-primary)', margin: 0, lineHeight: 1.3 }}>
+                        {project.title}
+                      </h3>
 
-                    {/* Desc */}
-                    <p style={{ color: 'var(--text-secondary)', fontSize: '0.86rem', lineHeight: 1.7, margin: 0 }}>
-                      {project.description}
-                    </p>
+                      {/* Desc */}
+                      <p style={{ color: 'var(--text-secondary)', fontSize: '0.86rem', lineHeight: 1.7, margin: 0 }}>
+                        {project.description}
+                      </p>
 
-                    {/* Tags */}
-                    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '5px' }}>
-                      {project.tags.map((tag, ti) => (
-                        <span key={tag} className={`tag ${tagColorCycle[ti % tagColorCycle.length]}`}>{tag}</span>
-                      ))}
-                    </div>
+                      {/* Tags */}
+                      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '5px' }}>
+                        {project.tags.map((tag, ti) => (
+                          <span key={tag} className={`tag ${tagColorCycle[ti % tagColorCycle.length]}`}>{tag}</span>
+                        ))}
+                      </div>
 
-                    {/* Expandable */}
-                    <AnimatePresence>
-                      {isOpen && (
-                        <motion.div
-                          initial={{ height: 0, opacity: 0 }}
-                          animate={{ height: 'auto', opacity: 1 }}
-                          exit={{ height: 0, opacity: 0 }}
-                          transition={{ duration: 0.3 }}
-                          style={{ overflow: 'hidden' }}
-                        >
-                          <div style={{ paddingTop: '0.85rem', borderTop: '1.5px dashed var(--border)', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-                            {/* Long desc */}
-                            <p style={{ color: 'var(--text-secondary)', fontSize: '0.82rem', lineHeight: 1.8,
-                              padding: '0.75rem', background: 'var(--cream-2)', borderRadius: 'var(--r-md)',
-                              border: '1.5px solid var(--border-soft)', margin: 0 }}>
-                              {project.longDescription}
-                            </p>
-                            {/* Features */}
-                            {project.features && (
-                              <div>
-                                <p style={{ fontSize: '0.75rem', fontWeight: 700, color: 'var(--text-muted)', marginBottom: '6px', textTransform: 'uppercase', letterSpacing: '0.06em' }}>
-                                  Key Features
-                                </p>
-                                <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '5px' }}>
-                                  {project.features.map((f, i) => (
-                                    <li key={i} style={{ display: 'flex', gap: '8px', fontSize: '0.8rem', color: 'var(--text-secondary)', alignItems: 'flex-start' }}>
-                                      <span style={{ color: c.text, flexShrink: 0, marginTop: '1px' }}>✦</span>
-                                      <span>{f}</span>
-                                    </li>
-                                  ))}
-                                </ul>
-                              </div>
-                            )}
-                            {/* Stack */}
-                            {project.architecture && (
-                              <div>
-                                <p style={{ fontSize: '0.75rem', fontWeight: 700, color: 'var(--text-muted)', marginBottom: '6px', textTransform: 'uppercase', letterSpacing: '0.06em' }}>
-                                  🔧 Tech Stack
-                                </p>
-                                <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
-                                  {project.architecture.map((a, i) => (
-                                    <div key={i} style={{
-                                      fontSize: '0.75rem', color: 'var(--text-secondary)',
-                                      fontFamily: 'var(--font-mono)', padding: '5px 10px',
-                                      background: 'var(--cream-2)', borderRadius: 'var(--r-sm)',
-                                      border: '1px solid var(--border-soft)',
-                                    }}>→ {a}</div>
-                                  ))}
+                      {/* Expandable */}
+                      <AnimatePresence>
+                        {isOpen && (
+                          <motion.div
+                            initial={{ height: 0, opacity: 0 }}
+                            animate={{ height: 'auto', opacity: 1 }}
+                            exit={{ height: 0, opacity: 0 }}
+                            transition={{ duration: 0.3 }}
+                            style={{ overflow: 'hidden' }}
+                          >
+                            <div style={{ paddingTop: '0.85rem', borderTop: '1.5px dashed var(--border)', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+                              {/* Long desc */}
+                              <p style={{ color: 'var(--text-secondary)', fontSize: '0.82rem', lineHeight: 1.8,
+                                padding: '0.75rem', background: 'var(--cream-2)', borderRadius: 'var(--r-md)',
+                                border: '1.5px solid var(--border-soft)', margin: 0 }}>
+                                {project.longDescription}
+                              </p>
+                              {/* Features */}
+                              {project.features && (
+                                <div>
+                                  <p style={{ fontSize: '0.75rem', fontWeight: 700, color: 'var(--text-muted)', marginBottom: '6px', textTransform: 'uppercase', letterSpacing: '0.06em' }}>
+                                    Key Features
+                                  </p>
+                                  <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '5px' }}>
+                                    {project.features.map((f, i) => (
+                                      <li key={i} style={{ display: 'flex', gap: '8px', fontSize: '0.8rem', color: 'var(--text-secondary)', alignItems: 'flex-start' }}>
+                                        <span style={{ color: c.text, flexShrink: 0, marginTop: '1px' }}>?</span>
+                                        <span>{f}</span>
+                                      </li>
+                                    ))}
+                                  </ul>
                                 </div>
-                              </div>
-                            )}
-                          </div>
-                        </motion.div>
-                      )}
-                    </AnimatePresence>
-                  </div>
+                              )}
+                              {/* Stack */}
+                              {project.architecture && (
+                                <div>
+                                  <p style={{ fontSize: '0.75rem', fontWeight: 700, color: 'var(--text-muted)', marginBottom: '6px', textTransform: 'uppercase', letterSpacing: '0.06em' }}>
+                                    ?? Tech Stack
+                                  </p>
+                                  <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
+                                    {project.architecture.map((a, i) => (
+                                      <div key={i} style={{
+                                        fontSize: '0.75rem', color: 'var(--text-secondary)',
+                                        fontFamily: 'var(--font-mono)', padding: '5px 10px',
+                                        background: 'var(--cream-2)', borderRadius: 'var(--r-sm)',
+                                        border: '1px solid var(--border-soft)',
+                                      }}>  {a}</div>
+                                    ))}
+                                  </div>
+                                </div>
+                              )}
+                            </div>
+                          </motion.div>
+                        )}
+                      </AnimatePresence>
+                    </div>
 
-                  {/* Footer */}
-                  <div style={{
-                    padding: '0.9rem 1.4rem',
-                    borderTop: '1.5px solid var(--border-soft)',
-                    display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-                    background: 'var(--cream)',
-                    borderRadius: '0 0 var(--r-lg) var(--r-lg)',
-                  }}>
-                    <button onClick={() => setExpanded(isOpen ? null : project.id)}
-                      style={{
-                        background: 'none', border: 'none', cursor: 'pointer',
-                        color: 'var(--text-muted)', fontSize: '0.78rem', fontWeight: 600,
-                        display: 'flex', alignItems: 'center', gap: '4px',
-                        fontFamily: 'var(--font-body)', transition: 'color 0.15s',
-                      }}>
-                      {isOpen ? 'Show less' : 'Details'}
-                      {isOpen ? <ChevronUp size={14} /> : <ChevronDown size={14} />}
-                    </button>
-                    <div style={{ display: 'flex', gap: '6px' }}>
-                      {project.repositories ? (
-                        project.repositories.map(repo => (
-                          <a key={repo.name} href={repo.url} target="_blank" rel="noreferrer"
+                    {/* Footer */}
+                    <div style={{
+                      padding: '0.9rem 1.4rem',
+                      borderTop: '1.5px solid var(--border-soft)',
+                      display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+                      background: 'var(--cream)',
+                    }}>
+                      <button onClick={() => setExpanded(isOpen ? null : project.id)}
+                        style={{
+                          background: 'none', border: 'none', cursor: 'pointer',
+                          color: 'var(--text-muted)', fontSize: '0.78rem', fontWeight: 600,
+                          display: 'flex', alignItems: 'center', gap: '4px',
+                          fontFamily: 'var(--font-body)', transition: 'color 0.15s',
+                        }}>
+                        {isOpen ? 'Show less' : 'Details'}
+                        {isOpen ? <ChevronUp size={14} /> : <ChevronDown size={14} />}
+                      </button>
+                      <div style={{ display: 'flex', gap: '6px' }}>
+                        {project.repositories ? (
+                          project.repositories.map(repo => (
+                            <a key={repo.name} href={repo.url} target="_blank" rel="noreferrer"
+                              style={{
+                                display: 'flex', alignItems: 'center', gap: '5px',
+                                padding: '5px 12px', borderRadius: 'var(--r-full)',
+                                background: 'var(--cream-2)', border: '1.5px solid var(--border)',
+                                color: 'var(--text-primary)', fontSize: '0.75rem', fontWeight: 600, textDecoration: 'none',
+                              }}>
+                              <Github size={13} /> {repo.name}
+                            </a>
+                          ))
+                        ) : project.githubUrl ? (
+                          <a href={project.githubUrl} target="_blank" rel="noreferrer"
                             style={{
                               display: 'flex', alignItems: 'center', gap: '5px',
                               padding: '5px 12px', borderRadius: 'var(--r-full)',
                               background: 'var(--cream-2)', border: '1.5px solid var(--border)',
                               color: 'var(--text-primary)', fontSize: '0.75rem', fontWeight: 600, textDecoration: 'none',
                             }}>
-                            <Github size={13} /> {repo.name}
+                            <Github size={13} /> Code
                           </a>
-                        ))
-                      ) : project.githubUrl ? (
-                        <a href={project.githubUrl} target="_blank" rel="noreferrer"
-                          style={{
-                            display: 'flex', alignItems: 'center', gap: '5px',
-                            padding: '5px 12px', borderRadius: 'var(--r-full)',
-                            background: 'var(--cream-2)', border: '1.5px solid var(--border)',
-                            color: 'var(--text-primary)', fontSize: '0.75rem', fontWeight: 600, textDecoration: 'none',
-                          }}>
-                          <Github size={13} /> Code
-                        </a>
-                      ) : null}
-                      {project.demoUrl && (
-                        <a href={project.demoUrl} target="_blank" rel="noreferrer"
-                          style={{
-                            display: 'flex', alignItems: 'center', gap: '5px',
-                            padding: '5px 12px', borderRadius: 'var(--r-full)',
-                            background: c.light, border: `1.5px solid ${c.mid}`, color: c.text,
-                            fontSize: '0.75rem', fontWeight: 600, textDecoration: 'none',
-                          }}>
-                          <ExternalLink size={12} /> Demo
-                        </a>
-                      )}
+                        ) : null}
+                        {project.demoUrl && (
+                          <a href={project.demoUrl} target="_blank" rel="noreferrer"
+                            style={{
+                              display: 'flex', alignItems: 'center', gap: '5px',
+                              padding: '5px 12px', borderRadius: 'var(--r-full)',
+                              background: c.light, border: `1.5px solid ${c.mid}`, color: c.text,
+                              fontSize: '0.75rem', fontWeight: 600, textDecoration: 'none',
+                            }}>
+                            <ExternalLink size={12} /> Demo
+                          </a>
+                        )}
+                      </div>
                     </div>
                   </div>
                 </motion.div>
