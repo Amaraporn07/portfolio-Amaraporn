@@ -35,7 +35,7 @@ export const PROJECTS_DATA: Project[] = [
     description: 'ระบบตรวจจับการล้มด้วย AI ผ่านกล้องเว็บแคม (Custom Trained Model)',
     longDescription: 'เว็บแอปพลิเคชันสำหรับตรวจจับและแจ้งเตือนการล้ม พัฒนาโดยการเทรนโมเดล AI ด้วยตัวเอง (Custom Trained) เพื่อวิเคราะห์ท่าทางแบบ Real-time และนำมาต่อยอดเป็นระบบช่วยเหลือผู้สูงอายุหรือผู้ป่วย',
     category: 'ai',
-    tags: ['AI/ML', 'Computer Vision', 'React', 'Python', 'Model Training'],
+    tags: ['TypeScript', 'JavaScript', 'CSS', 'AI/ML', 'Model Training'],
     color: 'pink',
     githubUrl: 'https://github.com/Aman050102/fall-detection-web.git',
     demoUrl: 'https://fall-detection-web-tawny.vercel.app/',
@@ -48,7 +48,7 @@ export const PROJECTS_DATA: Project[] = [
     ],
     architecture: [
       'AI/ML: Custom Trained Model สำหรับตรวจจับการล้ม',
-      'Frontend: React, WebRTC (สำหรับการเข้าถึงกล้อง)',
+      'Frontend: TypeScript, JavaScript, CSS, WebRTC (สำหรับการเข้าถึงกล้อง)',
       'Deployment: Vercel'
     ]
   },
