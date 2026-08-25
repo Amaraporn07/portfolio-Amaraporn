@@ -96,6 +96,15 @@ export default function Certificates() {
                   ))}
                 </div>
 
+                {cert.credentialUrl && /\.(png|jpe?g|svg|webp)/i.test(cert.credentialUrl) && (
+                  <a href={cert.credentialUrl} target="_blank" rel="noreferrer" onClick={e => e.stopPropagation()} style={{ display: 'block', marginTop: '12px', marginBottom: '8px', borderRadius: '8px', overflow: 'hidden', border: '1.5px solid var(--border-soft)', cursor: 'zoom-in' }}>
+                    <img src={cert.credentialUrl} alt={cert.title} style={{ width: '100%', display: 'block', transition: 'transform 0.2s' }} 
+                         onMouseOver={e => e.currentTarget.style.transform = 'scale(1.02)'}
+                         onMouseOut={e => e.currentTarget.style.transform = 'scale(1)'}
+                    />
+                  </a>
+                )}
+
                 {/* Expandable desc */}
                 <AnimatePresence>
                   {isOpen && (
@@ -111,11 +120,6 @@ export default function Certificates() {
                       }}>
                         {cert.description}
                       </p>
-                      {cert.credentialUrl && /\.(png|jpe?g|svg|webp)/i.test(cert.credentialUrl) && (
-                        <div style={{ marginTop: '10px', borderRadius: '8px', overflow: 'hidden', border: '1.5px solid var(--border-soft)' }}>
-                          <img src={cert.credentialUrl} alt={cert.title} style={{ width: '100%', display: 'block' }} />
-                        </div>
-                      )}
                     </motion.div>
                   )}
                 </AnimatePresence>
