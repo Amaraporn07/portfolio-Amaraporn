@@ -30,27 +30,26 @@ export const PROJECTS_DATA: Project[] = [
     ]
   },
   {
-    id: 'ecommerce-app',
-    title: 'E-Commerce Platform',
-    description: 'Full-stack online store with payment system, product management, shopping cart, and order tracking',
-    longDescription: 'Built a comprehensive e-commerce platform including storefront, inventory management, shopping cart, payment gateway, tracking status, and seller dashboard.',
-    category: 'fullstack',
-    tags: ['Next.js', 'TypeScript', 'Prisma', 'PostgreSQL', 'Stripe', 'Vercel'],
+    id: 'fall-detection-web',
+    title: 'Fall Detection Web AI',
+    description: 'ระบบตรวจจับการล้มด้วย AI ผ่านกล้องเว็บแคม (Custom Trained Model)',
+    longDescription: 'เว็บแอปพลิเคชันสำหรับตรวจจับและแจ้งเตือนการล้ม พัฒนาโดยการเทรนโมเดล AI ด้วยตัวเอง (Custom Trained) เพื่อวิเคราะห์ท่าทางแบบ Real-time และนำมาต่อยอดเป็นระบบช่วยเหลือผู้สูงอายุหรือผู้ป่วย',
+    category: 'ai',
+    tags: ['AI/ML', 'Computer Vision', 'React', 'Python', 'Model Training'],
     color: 'pink',
-    githubUrl: 'https://github.com/developer/ecommerce-platform',
-    demoUrl: 'https://developer-shop.vercel.app',
+    githubUrl: 'https://github.com/Aman050102/fall-detection-web.git',
+    demoUrl: 'https://fall-detection-web-tawny.vercel.app/',
     status: 'completed',
     features: [
-      'Shopping cart with state persistence via LocalStorage and Server-side',
-      'Payment processing via Stripe Payment Gateway with Webhook Handler',
-      'Advanced product search and filtering with Fuzzy Search',
-      'Seller dashboard summarizing sales, revenue charts, and stock management'
+      'เทรนโมเดล AI (Custom Model) ด้วยตัวเองเพื่อใช้สำหรับตรวจจับการล้มโดยเฉพาะ',
+      'วิเคราะห์และตรวจจับท่าทาง (Pose Estimation) แบบ Real-time ผ่านกล้องเว็บแคม',
+      'พัฒนาระบบ Web Application เพื่อให้ง่ายต่อการใช้งานและแจ้งเตือน',
+      'รองรับการทำงานบนบราวเซอร์โดยไม่ต้องติดตั้งโปรแกรมเพิ่มเติม'
     ],
     architecture: [
-      'Frontend: Next.js 14 App Router, TypeScript, Tailwind CSS',
-      'Backend: Next.js API Routes + tRPC for type-safe APIs',
-      'Database: PostgreSQL with Prisma ORM',
-      'Payment: Stripe API + Stripe Webhooks'
+      'AI/ML: Custom Trained Model สำหรับตรวจจับการล้ม',
+      'Frontend: React, WebRTC (สำหรับการเข้าถึงกล้อง)',
+      'Deployment: Vercel'
     ]
   },
   {
