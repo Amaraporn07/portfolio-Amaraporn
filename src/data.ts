@@ -10,6 +10,10 @@ export const PROJECTS_DATA: Project[] = [
     tags: ['Web Application', 'Service Management', 'Welfare System'],
     color: 'purple',
     githubUrl: '',
+    repositories: [
+      { name: 'Web', url: 'https://gitlab.com/final_project.se/UP_FMS-Web.git' },
+      { name: 'API', url: 'https://gitlab.com/final_project.se/UP_FMS-API.git' }
+    ],
     demoUrl: 'https://dsaservicewelfare.duckdns.org/login',
     status: 'completed',
     features: [

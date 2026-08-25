@@ -7,6 +7,7 @@ export interface Project {
   tags: string[];
   color: 'purple' | 'pink' | 'blue' | 'teal' | 'orange';
   githubUrl?: string;
+  repositories?: { name: string; url: string }[];
   demoUrl?: string;
   image?: string;
   features?: string[];

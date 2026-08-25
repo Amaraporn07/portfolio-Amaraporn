@@ -189,7 +189,19 @@ export default function Projects() {
                       {isOpen ? <ChevronUp size={14} /> : <ChevronDown size={14} />}
                     </button>
                     <div style={{ display: 'flex', gap: '6px' }}>
-                      {project.githubUrl && (
+                      {project.repositories ? (
+                        project.repositories.map(repo => (
+                          <a key={repo.name} href={repo.url} target="_blank" rel="noreferrer"
+                            style={{
+                              display: 'flex', alignItems: 'center', gap: '5px',
+                              padding: '5px 12px', borderRadius: 'var(--r-full)',
+                              background: 'var(--cream-2)', border: '1.5px solid var(--border)',
+                              color: 'var(--text-primary)', fontSize: '0.75rem', fontWeight: 600, textDecoration: 'none',
+                            }}>
+                            <Github size={13} /> {repo.name}
+                          </a>
+                        ))
+                      ) : project.githubUrl ? (
                         <a href={project.githubUrl} target="_blank" rel="noreferrer"
                           style={{
                             display: 'flex', alignItems: 'center', gap: '5px',
@@ -199,7 +211,7 @@ export default function Projects() {
                           }}>
                           <Github size={13} /> Code
                         </a>
-                      )}
+                      ) : null}
                       {project.demoUrl && (
                         <a href={project.demoUrl} target="_blank" rel="noreferrer"
                           style={{
