@@ -124,9 +124,9 @@ export default function Hero({ avatarUrl }: HeroProps) {
               initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.62 }}
               style={{ display: 'flex', gap: '0.65rem', flexWrap: 'wrap', alignItems: 'center' }}
             >
-              <button className="btn btn-primary" onClick={() => setShowModal(true)} id="view-resume-btn">
-                <FileText size={16} /> View Resume
-              </button>
+              <a className="btn btn-primary" href="/CV_WebDeveloper_Amaraporn.pdf" target="_blank" rel="noreferrer" id="view-resume-btn" style={{ textDecoration: 'none' }}>
+                <FileText size={16} /> View CV
+              </a>
               <div style={{ display: 'flex', gap: '6px', marginLeft: '4px' }}>
                 {[
                   { icon: <Github size={17} />, href: 'https://github.com',   bg: 'var(--text-primary)', fg: 'var(--cream)', label: 'GitHub' },
