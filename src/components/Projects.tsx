@@ -80,16 +80,16 @@ export default function Projects() {
                     <motion.div
                       initial={{ scale: 0, rotate: -30 }} animate={{ scale: 1, rotate: -10 }} transition={{ type: 'spring', delay: 0.2 }}
                       style={{
-                        position: 'absolute', top: '-14px', left: '-14px',
+                        position: 'absolute', top: '-18px', left: '-18px',
                         background: 'var(--yellow)', color: 'var(--black)',
-                        border: '2.5px solid var(--black)', borderRadius: '12px',
-                        padding: '6px',
+                        border: '3px solid var(--black)', borderRadius: '14px',
+                        padding: '8px',
                         display: 'flex', alignItems: 'center', justifyContent: 'center',
                         zIndex: 10,
-                        boxShadow: '3px 3px 0px 0px var(--black)'
+                        boxShadow: '4px 4px 0px 0px var(--black)'
                       }}
                     >
-                      <Star size={18} fill="var(--black)" strokeWidth={1.5} />
+                      <Star size={24} fill="var(--black)" strokeWidth={1.5} />
                     </motion.div>
                   )}
                                    <div style={{ flex: 1, display: 'flex', flexDirection: 'column', overflow: 'hidden', borderRadius: 'calc(var(--r-lg) - 2px)' }}>
