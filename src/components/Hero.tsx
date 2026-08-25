@@ -13,7 +13,7 @@ export default function Hero({ avatarUrl }: HeroProps) {
   const [showModal, setShowModal] = useState(false);
   const [roleIdx, setRoleIdx] = useState(0);
   const [typed, setTyped] = useState('');
-  const fullText = '3rd Year Computer Science Student';
+  const fullText = '3rd Year Software Engineering Student';
 
   // Typing effect
   useEffect(() => {
@@ -113,7 +113,7 @@ export default function Hero({ avatarUrl }: HeroProps) {
                 </div>
                 <div>
                   <p style={{ fontWeight: 700, fontSize: '0.88rem', color: 'var(--text-primary)', margin: 0 }}>University of Phayao</p>
-                  <p style={{ color: 'var(--text-muted)', fontSize: '0.77rem', margin: 0 }}>Computer Science · 3rd Year</p>
+                  <p style={{ color: 'var(--text-muted)', fontSize: '0.77rem', margin: 0 }}>Software Engineering · 3rd Year</p>
                 </div>
               </div>
             </motion.div>
@@ -269,7 +269,7 @@ export default function Hero({ avatarUrl }: HeroProps) {
                   <h3 style={{ fontSize: '0.8rem', fontWeight: 700, color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '0.6rem' }}>Education</h3>
                   <div style={{ padding: '1rem', background: 'var(--blue-light)', border: '1.5px solid var(--blue-mid)', borderRadius: 'var(--r-md)' }}>
                     <p style={{ fontWeight: 700, color: 'var(--text-primary)', margin: '0 0 3px', fontSize: '0.92rem' }}>University of Phayao</p>
-                    <p style={{ color: 'var(--text-secondary)', margin: '0 0 2px', fontSize: '0.83rem' }}>Bachelor of Science in Computer Science · 3rd Year</p>
+                    <p style={{ color: 'var(--text-secondary)', margin: '0 0 2px', fontSize: '0.83rem' }}>Bachelor of Science in Software Engineering · 3rd Year</p>
                     <p style={{ color: 'var(--text-muted)', margin: 0, fontSize: '0.77rem', fontFamily: 'var(--font-mono)' }}>2023 - Present | GPA: 3.28</p>
                   </div>
                 </div>

@@ -196,7 +196,7 @@ export const SKILLS_DATA: Skill[] = [
 export const EXPERIENCES_DATA: Experience[] = [
   {
     role: '3rd Year Student / University of Phayao (Currently studying)',
-    company: 'Computer Science — University of Phayao',
+    company: 'Software Engineering — University of Phayao',
     period: '2023 - Present',
     description: [
       'Core subjects: Database Management, Web Development, Data Structures & Algorithms, Software Engineering, and Computer Networks',
