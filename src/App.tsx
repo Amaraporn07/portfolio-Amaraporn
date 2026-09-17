@@ -9,7 +9,7 @@ import Transcript from './components/Transcript';
 import Certificates from './components/Certificates';
 import { ArrowUp, Heart } from 'lucide-react';
 
-import avatarImg from './assets/images/avatar.jpg';
+import avatarImg from './assets/images/studentIdPhoto.jpg';
 
 export default function App() {
   const [activeSection, setActiveSection] = useState('hero');
