@@ -129,7 +129,7 @@ export default function Hero({ avatarUrl }: HeroProps) {
               </a>
               <div style={{ display: 'flex', gap: '6px', marginLeft: '4px' }}>
                 {[
-                  { icon: <Github size={17} />, href: 'https://github.com',   bg: 'var(--text-primary)', fg: 'var(--cream)', label: 'GitHub' },
+                  { icon: <Github size={17} />, href: 'https://github.com/Amaraporn07', bg: 'var(--text-primary)', fg: 'var(--cream)', label: 'GitHub' },
                   { icon: <Linkedin size={17}/>, href: 'https://linkedin.com', bg: 'var(--blue)',          fg: '#fff',         label: 'LinkedIn' },
                 ].map(s => (
                   <motion.a
