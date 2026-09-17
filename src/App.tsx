@@ -66,12 +66,6 @@ export default function App() {
               <div key={i} style={{ width: '8px', height: '8px', borderRadius: '50%', background: c, opacity: 0.7 }} />
             ))}
           </div>
-          <p style={{ fontFamily: 'var(--font-head)', fontWeight: 700, fontSize: '1.1rem', color: 'var(--text-primary)' }}>
-            My Portfolio
-          </p>
-          <p style={{ color: 'var(--text-muted)', fontSize: '0.82rem', display: 'flex', alignItems: 'center', gap: '4px' }}>
-            Made with <Heart size={13} style={{ color: 'var(--red)', fill: 'var(--red)' }} /> by Software Engineer
-          </p>
         </div>
       </footer>
 
