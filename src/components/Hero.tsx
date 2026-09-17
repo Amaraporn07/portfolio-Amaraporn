@@ -7,7 +7,7 @@ import {
 
 interface HeroProps { avatarUrl: string; }
 
-const roles = ['UI Enthusiast', 'Database Designer', 'CS Student'];
+const roles = ['Web Developer', 'Programmer', 'Full-Stack Developer', 'Frontend Developer', 'Software Engineer'];
 
 export default function Hero({ avatarUrl }: HeroProps) {
   const [showModal, setShowModal] = useState(false);
