@@ -1,5 +1,7 @@
 # Amaraporn's Developer Portfolio 🚀
 
+**🌍 Live Preview:** [https://portfolio-amaraporn.vercel.app/](https://portfolio-amaraporn.vercel.app/)
+
 Welcome to my personal portfolio repository! This project is a modern, responsive web application built to showcase my skills, projects, and academic background.
 
 ## 🛠 Technologies Used
