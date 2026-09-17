@@ -122,6 +122,29 @@ export const PROJECTS_DATA: Project[] = [
       'Storage: IndexedDB (Dexie.js)',
       'Notifications: Web Push API'
     ]
+  },
+  {
+    id: 'floricode',
+    title: 'FloriCode (ภาษาดอกไม้ & จัดช่อดอกไม้เสมือนจริง)',
+    description: 'เว็บแอปค้นหาความหมายดอกไม้และระบบจำลองจัดช่อดอกไม้เสมือนจริงแบบ Interactive',
+    longDescription: 'เว็บแอปพลิเคชันเชิงโต้ตอบสไตล์ Cute & Minimal สำหรับค้นหาความหมายของดอกไม้ และมีระบบจำลองการจัดช่อดอกไม้เสมือนจริง ผู้ใช้สามารถเลือกดอกไม้ จัดเรียง ปรับขนาด เลือกกระดาษห่อ และบันทึกภาพช่อดอกไม้ของตัวเองได้ พร้อมคำนวณความหมายรวมของช่อดอกไม้',
+    category: 'frontend',
+    tags: ['React', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
+    color: 'pink',
+    githubUrl: 'https://github.com/Amaraporn07/floricode.git',
+    demoUrl: 'https://floricode.vercel.app/',
+    status: 'completed',
+    features: [
+      'พจนานุกรมดอกไม้: ค้นหาและกรองความหมายดอกไม้ตามโอกาสหรืออารมณ์',
+      'ระบบจัดช่อดอกไม้เสมือนจริง: เลือกดอกไม้, ลาก/ปรับขนาด/หมุนองศา (Drag & Drop)',
+      'ประมวลผลความหมาย: สรุปความหมายรวมของช่อจากดอกไม้ที่เลือก',
+      'Export & Share: บันทึกภาพผลงานเป็นไฟล์ PNG และสร้างการ์ดอวยพรดิจิทัล'
+    ],
+    architecture: [
+      'Frontend: React 18, TypeScript, Vite, Tailwind CSS',
+      'Animations & Interactive: Framer Motion, html-to-image',
+      'Deployment: Vercel, Docker Supported'
+    ]
   }
 ];
 
