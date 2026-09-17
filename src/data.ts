@@ -183,6 +183,8 @@ export const EXPERIENCES_DATA: Experience[] = [
 
 import certAiGame from './assets/images/cert_AMARAPORN_ONKHOKSUNG.png';
 import imgOpenHouse from './assets/images/7204.jpg';
+import certCmd101 from './assets/images/Command Prompt 101_certificate.png';
+import certGithubDev from './assets/images/GitHub for Developer _certificate.png';
 
 export const CERTIFICATES_DATA: Certificate[] = [
   {
@@ -206,64 +208,24 @@ export const CERTIFICATES_DATA: Certificate[] = [
     credentialUrl: certAiGame
   },
   {
-    id: 'cert-html-css',
-    title: 'Responsive Web Design Certification',
-    issuer: 'freeCodeCamp',
-    date: 'June 2024',
-    description: 'Studied and passed tests in HTML5, CSS3, Flexbox, Grid, and responsive web design. Spent over 300 hours.',
+    id: 'cert-cmd-101',
+    title: 'Command Prompt 101',
+    issuer: 'FutureSkill',
+    date: 'Recent',
+    description: 'เรียนรู้พื้นฐานการใช้งาน Command Line / Command Prompt สำหรับนักพัฒนา',
     color: 'orange',
     icon: 'Award',
-    credentialUrl: 'https://freecodecamp.org/certification/developer/responsive-web-design'
+    credentialUrl: certCmd101
   },
   {
-    id: 'cert-js',
-    title: 'JavaScript Algorithms and Data Structures',
-    issuer: 'freeCodeCamp',
-    date: 'August 2024',
-    description: 'Completed JavaScript training from basics to advanced, covering ES6+, Regular Expressions, Debugging, and Data Structures.',
-    color: 'purple',
-    icon: 'Code2',
-    credentialUrl: 'https://freecodecamp.org/certification/developer/javascript-algorithms-and-data-structures'
-  },
-  {
-    id: 'cert-react',
-    title: 'React - The Complete Guide',
-    issuer: 'Udemy (Academind)',
-    date: 'October 2024',
-    description: 'Comprehensive online course on React covering Hooks, Context, Redux, React Router, and app deployment.',
-    color: 'blue',
-    icon: 'Layers',
-    credentialUrl: 'https://udemy.com/certificate/react-complete-guide'
-  },
-  {
-    id: 'cert-sql',
-    title: 'SQL for Data Science',
-    issuer: 'Coursera (UC Davis)',
-    date: 'March 2024',
-    description: 'Studied the use of SQL in data analysis, covering SELECT, JOIN, Subqueries, Aggregation Functions, and Window Functions.',
-    color: 'teal',
-    icon: 'Database',
-    credentialUrl: 'https://coursera.org/verify/sql-data-science'
-  },
-  {
-    id: 'cert-github',
-    title: 'GitHub Foundations Certification',
-    issuer: 'GitHub',
-    date: 'January 2025',
-    description: 'Official certification from GitHub covering Git usage, GitHub, Collaboration Workflows, and GitHub Actions.',
+    id: 'cert-github-dev',
+    title: 'GitHub for Developer',
+    issuer: 'FutureSkill',
+    date: 'Recent',
+    description: 'การใช้งาน Git และ GitHub สำหรับนักพัฒนา เพื่อการจัดการเวอร์ชันและทำงานร่วมกัน',
     color: 'pink',
     icon: 'GitBranch',
-    credentialUrl: 'https://examregistration.github.com/certification/GHF'
-  },
-  {
-    id: 'cert-figma',
-    title: 'Figma UI Design Essentials',
-    issuer: 'Designlab',
-    date: 'November 2024',
-    description: 'Practiced UI/UX design skills with Figma from Wireframes, Design Systems, and Prototyping to developer Handoff.',
-    color: 'orange',
-    icon: 'Palette',
-    credentialUrl: 'https://designlab.com/certificate/figma'
+    credentialUrl: certGithubDev
   }
 ];
 
