@@ -70,7 +70,7 @@ export default function App() {
             My Portfolio
           </p>
           <p style={{ color: 'var(--text-muted)', fontSize: '0.82rem', display: 'flex', alignItems: 'center', gap: '4px' }}>
-            Made with <Heart size={13} style={{ color: 'var(--red)', fill: 'var(--red)' }} /> by Developer
+            Made with <Heart size={13} style={{ color: 'var(--red)', fill: 'var(--red)' }} /> by Software Engineer
           </p>
         </div>
       </footer>

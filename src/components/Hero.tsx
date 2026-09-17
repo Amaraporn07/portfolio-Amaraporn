@@ -7,7 +7,7 @@ import {
 
 interface HeroProps { avatarUrl: string; }
 
-const roles = ['Web Developer', 'UI Enthusiast', 'Database Designer', 'CS Student'];
+const roles = ['UI Enthusiast', 'Database Designer', 'CS Student'];
 
 export default function Hero({ avatarUrl }: HeroProps) {
   const [showModal, setShowModal] = useState(false);
@@ -55,13 +55,6 @@ export default function Hero({ avatarUrl }: HeroProps) {
           {/* ── Left: Text ── */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1.4rem' }}>
 
-            {/* Badge */}
-            <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}>
-              <span className="section-label" style={{ background: 'var(--yellow-light)', color: 'var(--yellow)', border: '1.5px solid var(--yellow-mid)' }}>
-                <Sparkles size={11} /> Portfolio 2025
-              </span>
-            </motion.div>
-
             {/* Greeting + Name */}
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.18 }}>
               <h1 className="section-title" style={{ fontSize: 'clamp(2.2rem, 5vw, 3.5rem)' }}>
@@ -69,7 +62,7 @@ export default function Hero({ avatarUrl }: HeroProps) {
                   My Portfolio
                 </span>
                 <span style={{ display: 'block', fontWeight: 600, color: 'var(--text-secondary)', fontSize: '0.72em', marginTop: '4px' }}>
-                  Developer
+                  Software Engineer
                 </span>
               </h1>
             </motion.div>
@@ -181,8 +174,6 @@ export default function Hero({ avatarUrl }: HeroProps) {
                   <h2 style={{ fontFamily: 'var(--font-head)', fontWeight: 700, fontSize: '1.15rem', color: 'var(--text-primary)', margin: '0 0 2px' }}>
                     My Portfolio
                   </h2>
-                  <p style={{ color: 'var(--text-muted)', fontSize: '0.78rem', margin: '0 0 0.9rem' }}>Web Developer</p>
-
                 </div>
               </div>
             </div>
@@ -255,7 +246,7 @@ export default function Hero({ avatarUrl }: HeroProps) {
                     My Portfolio
                   </h2>
                   <p style={{ color: 'var(--blue)', fontWeight: 700, margin: '0 0 10px', fontSize: '0.9rem' }}>
-                    Web Developer · 3rd Year CS
+                    3rd Year CS
                   </p>
                   <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '12px', fontSize: '0.78rem', color: 'var(--text-muted)' }}>
                     <span>dev@example.com</span>
