@@ -3,7 +3,7 @@ export interface Project {
   title: string;
   description: string;
   longDescription?: string;
-  category: 'fullstack' | 'backend' | 'other' | 'mobile' | 'design' | 'ai';
+  category: 'fullstack' | 'frontend' | 'backend' | 'other' | 'mobile' | 'design' | 'ai';
   tags: string[];
   color: 'purple' | 'pink' | 'blue' | 'teal' | 'orange';
   githubUrl?: string;
