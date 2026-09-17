@@ -182,8 +182,19 @@ export const EXPERIENCES_DATA: Experience[] = [
 ];
 
 import certAiGame from './assets/images/cert_AMARAPORN_ONKHOKSUNG.png';
+import imgOpenHouse from './assets/images/7204.jpg';
 
 export const CERTIFICATES_DATA: Certificate[] = [
+  {
+    id: 'award-open-house',
+    title: 'ทุนสนับสนุนและจัดแสดงผลงาน Open House',
+    issuer: 'คณะ / University of Phayao',
+    date: 'Recent',
+    description: 'ได้รับทุนสนับสนุนจำนวน 5,000 บาท และได้นำโปรเจกต์ไปออกบูธนำเสนอผลงานในงาน Open House ของคณะ',
+    color: 'teal',
+    icon: 'Award',
+    credentialUrl: imgOpenHouse
+  },
   {
     id: 'cert-ai-game',
     title: 'พื้นฐานการสร้างเกมด้วย AI ฉบับเข้าใจง่าย',
