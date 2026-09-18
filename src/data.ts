@@ -158,7 +158,7 @@ export const EXPERIENCES_DATA: Experience[] = [
   },
   {
     role: 'Full-Stack Developer (Initial Development)',
-    company: 'Sports Facility Usage Tracking & Analytics System — Phase 1',
+    company: 'DSA Service and Welfare — Phase 1',
     period: 'Year 2, Semester 1',
     description: [
       'Developed a Minimum Viable Product (MVP) to collect and analyze sports facility usage data',
@@ -169,7 +169,7 @@ export const EXPERIENCES_DATA: Experience[] = [
   },
   {
     role: 'Full-Stack Developer (System Re-Architecture & Optimization)',
-    company: 'Sports Facility Usage Tracking & Analytics System — Phase 2',
+    company: 'DSA Service and Welfare — Phase 2',
     period: 'Year 2, Semester 2',
     description: [
       'Executed a complete system re-architecture to resolve performance bottlenecks and high operational costs',
@@ -178,6 +178,17 @@ export const EXPERIENCES_DATA: Experience[] = [
       'Implemented Docker containerization and deployed the application on AWS for a scalable production environment'
     ],
     color: 'blue'
+  },
+  {
+    role: 'Full-Stack Developer (Feedback Iteration & On-Premise Deployment)',
+    company: 'DSA Service and Welfare — Phase 3',
+    period: 'Year 3, Semester 1',
+    description: [
+      'Enhanced UI/UX and feature workflows based on real user feedback from earlier phases',
+      'Deployed the production system onto internal institutional servers, ensuring local network compliance',
+      'Ensured operational stability and full self-hosted maintenance'
+    ],
+    color: 'pink'
   }
 ];
 
