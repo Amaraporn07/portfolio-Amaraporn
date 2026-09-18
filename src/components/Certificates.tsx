@@ -153,9 +153,8 @@ export default function Certificates() {
           transition={{ delay: 0.3 }}
           style={{
             marginTop: '2.5rem', padding: '1.25rem 2rem',
-            background: 'var(--white)', border: '1.5px solid var(--border)',
-            borderRadius: 'var(--r-xl)', display: 'flex', justifyContent: 'center',
-            gap: '3rem', flexWrap: 'wrap', boxShadow: 'var(--shadow-xs)',
+            display: 'flex', justifyContent: 'center',
+            gap: '3rem', flexWrap: 'wrap',
           }}>
           {[
             { value: `${CERTIFICATES_DATA.length}`, label: 'Certificates', color: 'var(--red)' },
