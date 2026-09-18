@@ -148,25 +148,6 @@ export default function Certificates() {
           })}
         </div>
 
-        {/* Summary strip */}
-        <motion.div initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
-          transition={{ delay: 0.3 }}
-          style={{
-            marginTop: '2.5rem', padding: '1.25rem 2rem',
-            display: 'flex', justifyContent: 'center',
-            gap: '3rem', flexWrap: 'wrap',
-          }}>
-          {[
-            { value: `${CERTIFICATES_DATA.length}`, label: 'Certificates', color: 'var(--red)' },
-            { value: '3+',             label: 'Platforms', color: 'var(--blue)' },
-            { value: '2024–2025',       label: 'Timeline',   color: 'var(--green)' },
-          ].map(s => (
-            <div key={s.label} style={{ textAlign: 'center' }}>
-              <div style={{ fontFamily: 'var(--font-head)', fontSize: '1.9rem', fontWeight: 800, color: s.color }}>{s.value}</div>
-              <div style={{ fontSize: '0.78rem', color: 'var(--text-muted)' }}>{s.label}</div>
-            </div>
-          ))}
-        </motion.div>
       </div>
     </section>
   );
